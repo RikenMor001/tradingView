@@ -8,9 +8,15 @@ export default function NavBar(){
         router.push("/Signup")
     }    
 
+    const handleDashboard = () => {
+        router.push("/")
+    }
+
     return <div className="flex justify-center items-center p-4 bg-slate-950 border-b border-slate-700 shadow-xl">
         <div className="text-left text-2xl font-bold text-blue-500 text-center">
-            TradingView
+            <button onClick = {handleDashboard} className="hover:text-blue-600 transition-all duration-300 cursor-pointer">
+               TradingView
+            </button>
         </div>
         <div className="flex justify-end items-center gap-4 ml-auto">
         <button className="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 transition-all duration-300 cursor-pointer
