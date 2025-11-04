@@ -1,6 +1,12 @@
 "use client"
+import { useRouter } from "next/router"
 
 export default function NavBar(){
+    const router = useRouter();
+    const handleSignup = () => {
+
+    }
+
     return <div className="flex justify-center items-center p-4 bg-slate-950 border-b border-slate-700 shadow-xl">
         <div className="text-left text-2xl font-bold text-blue-500 text-center">
            TradingView
